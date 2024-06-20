@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700&display=swap');
+
+
+
+.upeer-nav img {
+    max-width: 150px;
+    cursor: pointer;
+}
+
+.upeer-nav .search-box {
+    width: 55%;
+}
+
+@media (max-width:1199px) {
+    .upeer-nav .search-box {
+        width: 45%;
+    }
+}
+
+.upeer-nav .search {
+    width: 100%;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 5px 0px 0px 5px;
+    border-right: 0;
+    outline: none;
+
+
+
+
+}
+
+.upeer-nav .search textarea {
+    /* border: none; */
+
+}
+
+.upeer-nav i {
+    cursor: pointer;
+}
+
+.upeer-nav .search-btn {
+    background: none;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 0px 5px 5px 0px;
+    border-left: 0;
+
+}
+
+.user,
+.cart {
+    cursor: pointer;
+}
+
+.user small,
+.cart small {
+    color: #7d879c;
+    font-size: 11.2px;
+    font-family: "rubik";
+}
+
+.user h6,
+.cart h6 {
+    color: #4b566b;
+    font-size: 14px;
+    font-family: "rubik";
+
+}
+
+.cart:hover .sub-cart {
+    display: block;
+    z-index: 99;
+}
+
+.cart .cart-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: #F3F5F9;
+
+}
+
+.sub-cart {
+    display: none;
+    top: 99%;
+    right: 0;
+    transition: 0.5s;
+
+
+}
+
+.sub-cart ul {
+
+    position: relative;
+    height: 260px;
+    overflow-y: auto;
+
+}
+
+.sub-cart ul::-webkit-scrollbar {
+    display: none;
+}
+
+.sub-cart section {
+
+    font-size: .875rem;
+    font-weight: 500;
+    font-family: "rubik";
+    color: #373f50;
+}
+
+.sub-cart section span {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "rubik";
+    color: #4e54c8;
+
+}
+
+.sub-cart section span p {
+    display: flex;
+    align-items: center;
+
+
+    color: #7D879c;
+    font-size: 0.8rem;
+}
+
+.bottom-section section a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #373f50;
+    line-height: 1.5;
+    font-weight: normal;
+    font-size: 0.8125rem;
+    border: 1px solid rgb(137, 137, 137);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.bottom-section section a:hover {
+    background-color: #e3e4e7;
+}
+
+.bottom-section .checkout {
+    background: #FE696A;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    font-size: 13px;
+    font-family: "rubik";
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+
+}
+
+.bottom-section .checkout:hover {
+    background: #fb3737;
+}
+
+@media (max-width:999px) {
+    .lower-nav {
+        display: none;
+    }
+}
+
+.lower-nav .catogoris {
+    color: #444444;
+
+    font-family: "Rubik";
+
+    font-size: 16px;
+
+    line-height: 24px;
+
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.lower-nav li:hover .catogoris,
+.lower-nav .active {
+    color: #FE696A;
+    ;
+}
+
+.lower-nav li {
+    cursor: pointer;
+
+}
+
+@media (max-width:995px) {
+    .lower-nav li {
+        background: rgb(241, 241, 241);
+    }
+}
+
+.subdeparment {
+    width: 50%;
+}
+
+@media (max-width:999px) {
+    .subdeparment {
+        width: 100%;
+    }
+}
+
+.lower-nav .sub-menu {
+    display: none;
+    /* transform: scale(0); */
+    transition: 0.5s;
+    background: #ffffff;
+    z-index: 9;
+    position: absolute;
+}
+
+@media (max-width:999px) {
+    .lower-nav .sub-menu {
+        position: relative;
+    }
+}
+
+.lower-nav li:hover .sub-menu {
+    display: block;
+}
+
+@media (max-width:999px) {
+    .lower-nav li:hover .sub-menu {
+        display: block;
+    }
+}
+
+
+.sub-menu .item h5 {
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: "rubik";
+    line-height: 1.2;
+    font-weight: 500;
+    color: #373f50;
+}
+
+.sub-menu .item p {
+
+    font-family: "rubik";
+    line-height: 1.2;
+    color: #4b566b;
+    font-size: .875rem;
+    font-weight: normal;
+    margin: 0;
+    margin-top: 2px;
+    margin-bottom: 6px;
+}
+
+.sub-menu .item p:hover,
+.sub-menu .item p:active {
+    color: #ef3f4e;
+}
+
+.lower-nav .sub-menu li {
+    font-family: "rubik";
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.lower-nav .sub-menu li p {
+    font-family: "rubik";
+    font-size: 13.2px;
+    line-height: 16.8px;
+    font-weight: 400;
+    color: #7D879C;
+}
+
+.shopbox .sub-menu h5 {
+    color: #373f50;
+    font-family: "rubik";
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 500;
+}
+
+.sub-menu li {
+    color: #505050;
+    font-family: "rubik";
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.shopbox .sub-menu li:hover,
+.shopbox .sub-menu li:focus {
+    color: #FE696A;
+}
+
+.shopmenu ul h5 {
+    font-family: "rubik";
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 500;
+}
+
+.shopmenu ul li {
+    font-family: "rubik";
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #505050;
+}
+
+.accountmenu li {
+    font-family: "rubik";
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #505050;
+    position: relative;
+}
+
+.accountmenu .subchild {
+    position: absolute;
+    width: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    left: 100%;
+    top: 0;
+    display: none;
+    background: white;
+}
+
+@media (max-width:999px) {
+    .accountmenu .subchild {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    .accountmenu li:hover .subchild {
+        display: none;
+    }
+}
+
+.accountmenu li:hover .subchild,
+.accountmenu li:active .subchild {
+    display: block;
+}
+
+.poster-area .poster-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.poster-area .poster-box .posters {
+    position: relative;
+    transition: 0.5s;
+}
+
+.poster-area .poster-box .poster1 {
+    flex: 0 0 100%;
+    background: #F5B1B0;
+}
+
+.poster-area .poster-box .poster2 {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    background: #EBA170;
+}
+
+.poster-area .poster-box .poster3 {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    background: #3AAFD2;
+
+}
+
+.poster-area .poster-box img {
+    width: 100%;
+}
+
+.poster-area .poster-box button {
+    background: white;
+    border: 1px solid rgb(78, 78, 78);
+    outline: none;
+    border-radius: 5px;
+    scale: 0;
+    transition: 0.3s;
+}
+
+.poster-area .poster-box:hover button {
+    scale: 1;
+}
+
+.poster-area .poster-box .left-btn {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+
+.poster-area .poster-box .right-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+
+.catago {
+    background: white;
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    z-index: 1;
+    margin-top: -130px;
+}
+
+@media (max-width:990px) {
+    .catago {
+        margin-top: 0px;
+    }
+}
+.tittle{
+    font-family: 'rubik';
+    font-size: 28px;
+    line-height: 33.6px;
+    font-weight: 500;
+    color: #373F50    ;
+}
+.product{
+transition: 0.5s;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.product:hover{
+    scale: 1.05;
+    }
+.product img{
+    width: 100%;
+    height: 30vh;
+}
+.product p{
+    font-size: 15px;
+   font-family: 'rubik';
+}
+
+.product  .choose-size {
+    display: none;
+}
+
+.product button{
+    font-size: 20px;
+    font-family: 'jost';
+    background:#fcfcfc;
+    outline: none;
+    border:none;
+    border-radius: 4px;
+   transition: 0.5s;
+   font-family: 'rubik';
+   font-size: 15px;
+   font-weight: 500;
+   color: white;
+  border: 1px solid #FE696A;
+   color: black;
+   transition: 0.5s;
+}
+.product button:hover{
+    background: #FE696A;
+    color: white;
+}
+.product p{
+    font-size: 12px;
+    font-family: 'rubik';
+    line-height: 18px;
+    font-weight: 400;
+    color: #4B566B;
+}
+
+.product h3{
+    font-size: 14px;
+    font-family: 'rubik';
+    line-height: 16.8px;
+    font-weight: 500;
+height: 60px;
+    
+}
+.showmore-btn{
+    background: transparent;
+    border-radius: 3px;
+    border: 1px solid #31304D;
+    font-family: 'rubik';
+    transition: 0.6s;
+}
+.showmore-btn:hover{
+    background:#31304D;
+    color:white;
+}
+.footer-section{
+    background: #373F50;
+}
+
+.footer-section span{
+   color: #ffffff;
+   font-family: "rubik";
+   font-size: 17px;
+   line-height: 20.04px;
+   font-weight: 500;
+}
+.footer-section li{
+    margin: 7px 0 7px 0;
+}
+.footer-section a{
+    text-decoration: none;
+    color: #dcdcdc;
+    font-family: "rubik";
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+ }
+ .footer-section  .input-section{
+   background: #ffffff;
+   align-items: center;
+   border-radius: 10px;
+   overflow: hidden;
+ }
+ .footer-section input{
+    width: 80%;
+    background: #ffffff;
+    outline: none;
+    border: none;
+    padding: 10px 0 10px 0;
+ }
+ .footer-section .input-section button{
+    background: #FE696A;
+    border: none;
+    color: white;
+    font-family: 'rubik';
+    padding: 10px 5px 10px 5px;    
+ }
+ .footer-section p{
+    color: #dcdcdc;
+    font-family: 'rubik';
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+
+ }
+ .footer-section .downlad-box button{
+    background: #303847;
+    border: none;
+    align-items: center;
+    color: white;
+ }
+ .footer-section .downlad-box button:hover{
+    background: #212835;
+ }
+  .downlad-box button section{
+    color: (255, 255, 255, 0.6);
+    font-size: 11px;
+    font-weight: 400;
+  }
